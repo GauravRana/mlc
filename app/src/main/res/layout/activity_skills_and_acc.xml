@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.profile.activities.SkillsAndAcc"
+    style="@style/statusBarHeader">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/screen_background">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/content_header"/>
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_15sdp">
+
+        <View
+            android:id="@+id/shadow1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_shadow_top_height"
+            android:background="@drawable/top_shadow_gradient"/>
+
+        <LinearLayout
+            android:id="@+id/ll_sys"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/drawable_shadow_normal">
+
+            <TextView
+                android:id="@+id/tv_sys"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Pharmacy Systems"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_details" />
+
+
+            <ImageView
+                android:id="@+id/iv_warning_system"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:visibility="gone"
+                android:src="@drawable/warning" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="right|center"
+                android:layout_gravity="">
+
+            <ImageView
+                android:id="@+id/iv_sys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right|center"
+                android:src="@drawable/ic_drop_down"
+                android:layout_marginRight="@dimen/_15sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/shadow2"
+            android:layout_below="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_shadow_bottom_height"
+            android:background="@drawable/bottom_shadow_gradient"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/shadow3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_shadow_top_height"
+            android:background="@drawable/top_shadow_gradient"/>
+
+        <LinearLayout
+            android:id="@+id/ll_skills"
+            android:layout_below="@+id/ll_sys"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/drawable_shadow_normal">
+
+            <TextView
+                android:id="@+id/tv_skills"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Skills"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_details" />
+
+            <ImageView
+                android:id="@+id/iv_warning_skills"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@+id/tv_pharma_sp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:visibility="gone"
+                android:src="@drawable/warning" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="right|center"
+                android:layout_gravity="">
+
+            <ImageView
+                android:id="@+id/iv_skills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_drop_down"
+                android:layout_marginRight="@dimen/_15sdp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/shadow4"
+            android:layout_below="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_shadow_bottom_height"
+            android:background="@drawable/bottom_shadow_gradient"/>
+    </LinearLayout>
+
+        <View
+            android:id="@+id/shadow10"
+            android:layout_below="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_shadow_bottom_height"
+            android:background="@drawable/bottom_shadow_gradient"/>
+    <LinearLayout
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/shadow5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_shadow_top_height"
+            android:background="@drawable/top_shadow_gradient"/>
+
+        <LinearLayout
+            android:id="@+id/ll_acc"
+            android:layout_below="@+id/ll_skills"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/drawable_shadow_normal">
+
+            <TextView
+                android:id="@+id/tv_acc"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent"
+                android:text="Accreditations"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:textSize="@dimen/text_details" />
+
+            <ImageView
+                android:id="@+id/iv_warning_acc"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@+id/tv_pharma_sp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:visibility="gone"
+                android:src="@drawable/warning" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="right|center"
+                android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_acc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:src="@drawable/ic_drop_down"
+                android:layout_marginRight="@dimen/_15sdp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/shadow6"
+            android:layout_below="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_shadow_bottom_height"
+            android:background="@drawable/bottom_shadow_gradient"/>
+    </LinearLayout>
+
+        <View
+            android:id="@+id/shadow12"
+            android:layout_below="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_shadow_bottom_height"
+            android:background="@drawable/bottom_shadow_gradient"/>
+    </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

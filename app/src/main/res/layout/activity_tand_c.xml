@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_80sdp"
+            android:text="@string/text_tc"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_very_very_big_label"/>
+
+        <TextView
+            android:id="@+id/tv_Email"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:text="@string/text_via_email"
+            android:gravity="center"
+            android:background="@drawable/drawable_shadow_up_down"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_small_label" />
+
+
+    <android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="false"
+        android:scrollbarFadeDuration="0"
+        android:layout_marginBottom="@dimen/_40sdp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_mandatory_policy"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_big_label"
+                android:padding="@dimen/_10sdp"/>
+
+            <TextView
+                android:id="@+id/tc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_tu"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_small_label"
+                android:padding="@dimen/_10sdp"/>
+
+            <TextView
+                android:id="@+id/ap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text_accept_use"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_small_label"
+                android:padding="@dimen/_10sdp"/>
+
+            <TextView
+                android:id="@+id/dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/text_dp"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_small_label"
+                android:padding="@dimen/_10sdp"/>
+        </LinearLayout>
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/drawable_shadow_up">
+
+
+        <TextView
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:gravity="left"
+            android:padding="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:text="Cancel"/>
+
+        <TextView
+            android:id="@+id/btn_accept"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:padding="@dimen/_10sdp"
+            android:layout_height="match_parent"
+            android:textColor="@color/blue"
+            android:text="Accept"/>
+
+    </LinearLayout>
+</RelativeLayout>

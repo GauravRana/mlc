@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "379589231673",
+    "firebase_url": "https://my-locum-choice-1534784246002.firebaseio.com",
+    "project_id": "my-locum-choice-1534784246002",
+    "storage_bucket": "my-locum-choice-1534784246002.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:379589231673:android:158ccdd4a4c4dfbb",
+        "android_client_info": {
+          "package_name": "com.mylocumchoice.MyLocumChoicePharmacy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "379589231673-uk6diavr9u4k1nvcb7tgsfc3e0llqadi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC6eWqmITaikVnIYx8-el_X5j7tzPy0mhA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_very_very_small_label">@dimen/_6sdp</dimen>
+    <dimen name="text_very_small_label">@dimen/_9sdp</dimen>
+    <dimen name="text_small_label">@dimen/_10sdp</dimen>
+    <dimen name="text_medium_label">@dimen/_13sdp</dimen>
+    <dimen name="text_big_label">@dimen/_14sdp</dimen>
+    <dimen name="text_details">@dimen/_11sdp</dimen>
+    <dimen name="text_very_big_label">@dimen/_16sdp</dimen>
+    <dimen name="text_very_very_big_label">@dimen/_18sdp</dimen>
+    <dimen name="text_shadow_top_height">@dimen/_2sdp</dimen>
+    <dimen name="text_shadow_bottom_height">@dimen/_4sdp</dimen>
+    <dimen name="length">11dp</dimen>
+    <dimen name="text_details_small">@dimen/_10sdp</dimen>
+    <dimen name="text_details_big">@dimen/_12sdp</dimen>
+    <dimen name="titleBar">@dimen/_15sdp</dimen>
+    <dimen name="text_details_very_big">@dimen/_13sdp</dimen>
+    <dimen name="textsize">14sp</dimen>
+    <dimen name="dialog_margin">@dimen/_15sdp</dimen>
+
+    <dimen name="text_custom">@dimen/_11sdp</dimen>
+</resources>

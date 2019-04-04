@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/_15sdp">
+
+        <View
+            android:id="@+id/shadow"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_shadow_top_height"
+            android:background="@drawable/top_shadow_gradient"/>
+        <LinearLayout
+            android:id="@+id/ll_man_pref"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_26sdp"
+            android:paddingBottom="@dimen/_26sdp"
+            android:orientation="horizontal"
+            android:background="@drawable/drawable_shadow_down"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/rb_text"
+                android:layout_width="0dp"
+                android:layout_weight="0.80"
+                android:layout_height="wrap_content"
+                android:text="Are you NMS accredited?"
+                android:textSize="@dimen/text_small_label"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_15sdp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.30"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <Switch
+                    style="@style/SwitchStyle"
+                    android:id="@+id/sw_compat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:thumb="@drawable/drawable_switch"
+                    android:track="@drawable/drawable_bg"
+                    android:layout_marginRight="@dimen/_10sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pref_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_19sdp"
+            android:paddingBottom="@dimen/_19sdp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/drawable_shadow_normal">
+
+            <TextView
+                android:id="@+id/tv_upLoadText"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="wrap_content"
+                android:text="Upload NMS certificate or Self Declaration"
+                android:textSize="@dimen/text_small_label"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="@dimen/_2sdp"
+                android:layout_marginLeft="@dimen/_15sdp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.20"
+                android:gravity="right">
+
+                <ImageView
+                    android:id="@+id/iv_upload"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/_23sdp"
+                    android:src="@drawable/ic_upload" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/shadow2"
+            android:layout_below="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_shadow_bottom_height"
+            android:background="@drawable/bottom_shadow_gradient"/>
+    </LinearLayout>
+
+
+</LinearLayout>

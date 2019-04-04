@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_head"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:gravity="center"
+        android:background="@drawable/drawable_shadow_down"
+        android:text="Which Pharmacy Systems are you comfortable using?"/>
+
+    <com.mylocumchoice.MyLocumChoicePharmacy.profile.NonScrollListView
+        android:id="@+id/lv_items"
+        android:visibility="visible"
+        android:layout_below="@+id/tv_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:divider="@android:color/transparent">
+    </com.mylocumchoice.MyLocumChoicePharmacy.profile.NonScrollListView>
+
+</RelativeLayout>

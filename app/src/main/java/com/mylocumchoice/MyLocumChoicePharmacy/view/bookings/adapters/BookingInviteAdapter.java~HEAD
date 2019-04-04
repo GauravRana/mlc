@@ -1,0 +1,102 @@
+package com.mylocumchoice.MyLocumChoicePharmacy.view.bookings.adapters;
+
+import android.content.Context;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import com.mylocumchoice.MyLocumChoicePharmacy.R;
+import com.mylocumchoice.MyLocumChoicePharmacy.view.base.BaseFragment;
+import com.mylocumchoice.MyLocumChoicePharmacy.utils.RecyclerViewClickListener;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
+public class BookingInviteAdapter extends RecyclerView.Adapter<BookingInviteAdapter.ViewHolder> {
+    private RecyclerViewClickListener mListener;
+    private Context mContext;
+    private BaseFragment fragment;
+    private String from;
+
+    public BookingInviteAdapter(BaseFragment fragment, Context mContext,RecyclerViewClickListener listener) {
+        this.mListener = listener;
+        this.mContext = mContext;
+        this.fragment = fragment;
+        this.from = from;
+    }
+    public class ViewHolder extends RecyclerView.ViewHolder{
+
+        /** ButterKnife Code **/
+        @BindView(R.id.iv_profile)
+        de.hdodenhof.circleimageview.CircleImageView ivProfile;
+        @BindView(R.id.tv_head)
+        TextView tvHead;
+        @BindView(R.id.tv_price)
+        TextView tvPrice;
+        @BindView(R.id.iv_Notify)
+        ImageView ivNotify;
+        @BindView(R.id.iv_teal)
+        ImageView ivTeal;
+        @BindView(R.id.iv_cal)
+        ImageView ivCal;
+        @BindView(R.id.tv_Date)
+        TextView tvDate;
+        @BindView(R.id.iv_clock)
+        ImageView ivClock;
+        @BindView(R.id.tv_Time)
+        TextView tvTime;
+        @BindView(R.id.iv_loc)
+        ImageView ivLoc;
+        @BindView(R.id.tv_Place)
+        TextView tvPlace;
+        @BindView(R.id.ll_pace)
+        LinearLayout llPace;
+        @BindView(R.id.tv_Pace)
+        TextView tvPace;
+        @BindView(R.id.tv_subLoc)
+        TextView tvSubLoc;
+        /** ButterKnife Code **/
+
+        public ViewHolder(View v) {
+            super(v);
+            ButterKnife.bind(this,v);
+        }
+    }
+
+    // Create new views (invoked by the layout manager)
+    @Override
+    public BookingInviteAdapter.ViewHolder onCreateViewHolder(ViewGroup parent,
+                                                              int viewType) {
+        // create a new view
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        View v = inflater.inflate(R.layout.adapter_openshift, parent, false);
+        // set the view's size, margins, paddings and layout parameters
+        ButterKnife.bind(this, v);
+        final ViewHolder vh = new ViewHolder(v);
+        v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mListener.onClick(v,vh.getAdapterPosition());
+            }
+        });
+
+        return vh;
+    }
+
+    @Override
+    public void onBindViewHolder(ViewHolder holder, final int position) {
+            holder.ivTeal.setVisibility(View.GONE);
+    }
+
+
+    @Override
+    public int getItemCount() {
+        return 15;
+    }
+
+
+}

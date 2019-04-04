@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.profile.activities.References"
+    android:orientation="vertical"
+    style="@style/statusBarHeader">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/screen_background">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/content_header"/>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_8sdp">
+
+                <View
+                    android:id="@+id/shadow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_shadow_top_height"
+                    android:background="@drawable/top_shadow_gradient"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:background="@drawable/drawable_shadow_normal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/_20sdp"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_small_label"
+                        android:text="You can add a maximum of 2 references and for each reference, you will need to upload the reference form, duly filled and signed by them."/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/text_small_label"
+                        android:text="* Adding References is optional"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/_20sdp">
+
+
+                        <TextView
+                            android:id="@+id/tv_form"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:textSize="@dimen/text_small_label"
+                            android:textColor="@color/colorPrimary"
+                            android:text="@string/text_reference_info"/>
+
+                        <ImageView
+                            android:id="@+id/iv_form"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_grey_mail"
+                            android:paddingLeft="@dimen/_10sdp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/shadow2"
+                    android:layout_below="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_shadow_bottom_height"
+                    android:background="@drawable/bottom_shadow_gradient"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/lv_items"
+                android:visibility="visible"
+                android:layout_below="@+id/ll_header"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:overScrollMode="never"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/ll_AddRefer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_8sdp">
+
+                <View
+                    android:id="@+id/shadow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_shadow_top_height"
+                    android:background="@drawable/top_shadow_gradient"/>
+
+                <LinearLayout
+                    android:layout_below="@+id/lv_items"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/drawable_shadow_normal"
+                    android:id="@+id/layout_list">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/iv_icon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_grey_plus"
+                            android:layout_marginLeft="@dimen/_15sdp"/>
+
+                        <TextView
+                            android:id="@+id/tv_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add a Reference"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_small_label"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/_10sdp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:layout_gravity="center">
+
+                        <ImageView
+                            android:id="@+id/iv_add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_drop_down"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:padding="@dimen/_10sdp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/shadow4"
+                    android:layout_below="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_shadow_bottom_height"
+                    android:background="@drawable/bottom_shadow_gradient"/>
+            </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    </RelativeLayout>
+</RelativeLayout>

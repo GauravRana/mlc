@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--<me.didik.component.StickyNestedScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@+id/toolbar"-->
+        <!--android:scrollbars="none">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/screen_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/grey_background"
+                android:tag="sticky">
+
+            <TextView
+                android:id="@+id/tv_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/_14sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                android:text=""
+                android:gravity="center_vertical"
+                android:textColor="@color/grey"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:textSize="@dimen/text_details"/>
+
+
+                <View
+                    android:id="@+id/shadow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_shadow_top_height"
+                    android:background="@drawable/top_shadow_gradient"/>
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+
+            <View
+                android:id="@+id/shadow21"
+                android:layout_below="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_shadow_bottom_height"
+                android:background="@drawable/bottom_shadow_gradient"/>
+
+
+    </LinearLayout>
+
+    <!--</me.didik.component.StickyNestedScrollView>-->
+
+</LinearLayout>

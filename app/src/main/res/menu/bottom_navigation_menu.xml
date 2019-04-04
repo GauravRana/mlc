@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_favorites"
+        android:enabled="true"
+        android:icon="@drawable/menu_bell_off"
+        android:title="@string/text_empty"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_schedules"
+        android:enabled="true"
+        android:icon="@drawable/menu_bell_on"
+        android:title="@string/text_empty"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_music"
+        android:enabled="true"
+        android:icon="@drawable/menu_cal_off"
+        android:title="@string/text_empty"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_mus"
+        android:enabled="true"
+        android:icon="@drawable/menu_calc_off"
+        android:title="@string/text_empty"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_musi"
+        android:enabled="true"
+        android:icon="@drawable/menu_calc_off"
+        android:title="@string/text_empty"
+        app:showAsAction="ifRoom" />
+
+</menu>

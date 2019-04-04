@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.profile.activities.PharmacySys"
+    style="@style/statusBarHeader">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/screen_background">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/content_header"/>
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+         <View
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_height="@dimen/text_shadow_top_height"
+        android:background="@drawable/top_shadow_gradient"/>
+
+        <LinearLayout
+        android:layout_below="@+id/shadow"
+        android:id="@+id/ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/drawable_shadow_down">
+
+        <TextView
+            android:id="@+id/tv_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/drawable_shadow_normal"
+            android:text="@string/ph_sys"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+        android:id="@+id/ll_list"
+        android:layout_below="@+id/ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/lv_items"
+            android:visibility="visible"
+            android:layout_below="@+id/ll_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:divider="@android:color/transparent">
+        </android.support.v7.widget.RecyclerView>
+
+        <View
+            android:id="@+id/shadow2"
+            android:layout_below="@+id/ll_list"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/_57sdp"
+            android:layout_height="@dimen/text_shadow_bottom_height"
+            android:background="@drawable/bottom_shadow_gradient"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+        </ScrollView>
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_62sdp"
+            android:id="@+id/ll_frameLayout"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView
+                    style="@style/ms9_DefaultShadowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_62sdp"
+                    app:ms9_shadowTranslationZ="@dimen/_5sdp"
+                    app:ms9_shadowElevation="@dimen/_10sdp"
+                    app:ms9_useAmbientShadow="false"
+                    app:ms9_useSpotShadow="true"
+                    app:ms9_forceUseCompatShadow="true"
+                    app:ms9_affectsDisplayedPosition="true"
+                    app:ms9_spotShadowDrawablesList="@array/ms9_spot_shadow_drawables_z18"
+                    app:ms9_ambientShadowDrawablesList="@array/ms9_ambient_shadow_drawables_z18">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </LinearLayout>
+                </com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom">
+
+                    <TextView
+                        style="@style/TextViewRect"
+                        android:id="@+id/btn_done"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/text_done" />
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

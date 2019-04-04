@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_7sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/tab_back"
+            android:id="@+id/viewPage"
+            >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_135sdp">
+            </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:id="@+id/sliderDots"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_5sdp"
+                android:layout_height="@dimen/_15sdp"
+                >
+
+
+                <ImageView android:layout_height="10dp"
+                    android:layout_width="10dp"
+                    android:id="@+id/btn1"
+                    android:src="@drawable/holo_circle"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView android:layout_height="10dp"
+                    android:layout_width="10dp"
+                    android:id="@+id/btn2"
+                    android:layout_toRightOf="@id/btn1"
+                    android:src="@drawable/holo_circle"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_vertical"/>
+
+                <ImageView android:layout_height="10dp"
+                    android:layout_width="10dp"
+                    android:id="@+id/btn3"
+                    android:layout_toRightOf="@id/btn2"
+                    android:src="@drawable/holo_circle"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:focusableInTouchMode="true">
+
+
+            <LinearLayout
+                android:id="@+id/ll_receivePayment"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/drawable_shadow_up_down">
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:src="@drawable/ic_msg"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.8"
+                    android:gravity="left|center"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="@string/text_payment"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/swipeRefreshLayout"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:nestedScrollingEnabled="false"
+                 >
+            </android.support.v7.widget.RecyclerView>
+
+        </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

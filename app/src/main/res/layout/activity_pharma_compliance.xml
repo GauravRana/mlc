@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.profile.activities.SelectPharmacyActivity"
+    style="@style/statusBarHeader">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/screen_background">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/content_header"/>
+
+        <EditText
+            android:visibility="visible"
+            android:id="@+id/editText"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:background="@drawable/curved_edge_rect"
+            android:textSize="@dimen/text_details"
+            android:paddingLeft="@dimen/_15sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:drawableRight="@drawable/ic_custom_search"
+            android:drawablePadding="@dimen/_40sdp"
+            android:hint="@string/text_search_pharmacy" />
+
+
+        <View
+            android:layout_below="@+id/editText"
+            android:id="@+id/shadow1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_shadow_top_height"
+            android:background="@drawable/top_shadow_gradient"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listView"
+            android:layout_below="@+id/shadow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="0dp">
+        </android.support.v7.widget.RecyclerView>
+
+
+        <View
+            android:id="@+id/shadow21"
+            android:layout_below="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_shadow_bottom_height"
+            android:background="@drawable/bottom_shadow_gradient"/>
+
+        <TextView
+            android:id="@+id/tv_noData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="@dimen/_13sdp"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:text="@string/noCompliance"
+            android:textSize="@dimen/_13sdp"
+            android:textColor="@color/grey"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

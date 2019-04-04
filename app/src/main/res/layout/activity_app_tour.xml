@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/iv_cross"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SKIP"
+        android:textSize="@dimen/text_details"
+        android:textColor="@color/skip"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp" />
+
+    <TextView
+        android:id="@+id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:gravity="center"
+        android:layout_below="@+id/iv_cross"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:textColor="#000"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:text="Click here to set and apply filters/preferences for shifts."/>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv_desc"
+        android:layout_above="@+id/pager_indicator"/>
+
+    <com.ravindu1024.indicatorlib.ViewPagerIndicator
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        app:indicatorSpacing="@dimen/_5sdp"
+        android:background="@color/white"
+        android:gravity="center_horizontal|center_vertical"
+        android:id="@+id/pager_indicator"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

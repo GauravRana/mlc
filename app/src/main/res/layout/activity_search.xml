@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_search"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp"
+        android:paddingLeft="@dimen/margin_15dp"
+        android:paddingTop="@dimen/_10sdp"
+        android:src="@drawable/ic_down"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/edit_grey_drawable"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/search_et"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.8"
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_place_search"
+            android:drawablePadding="@dimen/_10sdp"
+            android:hint="Search for any location"
+            android:maxLines="1"
+            android:padding="@dimen/_8sdp"
+            android:textAppearance="@style/TextAppearance.FontPathRegular"
+            android:textSize="@dimen/text_small_label"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:src="@drawable/ic_places_cross"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/loc"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.8"
+            android:drawableLeft="@drawable/ic_current"
+            android:drawablePadding="@dimen/_10sdp"
+            android:gravity="center_vertical"
+            android:hint="Use Current Location"
+            android:maxLines="1"
+            android:padding="@dimen/_8sdp"
+            android:textAppearance="@style/TextAppearance.FontPathRegular"
+            android:textColorHint="@color/green"
+            android:textSize="@dimen/text_small_label"
+            android:visibility="visible" />
+
+
+        <TextView
+            android:id="@+id/tv_noResults"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:padding="@dimen/_8sdp"
+            android:gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.FontPathRegular"
+            android:text="No results found"
+            android:textColor="@color/grey"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_str" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_et"
+        android:background="@color/white"
+        android:overScrollMode="never"></android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:id="@+id/google"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_search"
+        android:layout_gravity="right|center_vertical"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:padding="@dimen/_15sdp"
+        android:src="@drawable/ic_google"
+        android:visibility="visible" />
+
+</LinearLayout>

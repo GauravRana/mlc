@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_15sdp">
+
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_shadow_top_height"
+        android:background="@drawable/top_shadow_gradient" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_lower"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/drawable_shadow_up_down"
+        android:paddingTop="@dimen/_26sdp"
+        android:paddingBottom="@dimen/_26sdp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/rb_text"
+            android:layout_width="0dp"
+            android:layout_weight="0.80"
+            android:layout_height="wrap_content"
+            android:text="Do you have any objections selling any particular medicines?"
+            android:textSize="@dimen/text_small_label"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_15sdp"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:gravity="right">
+
+            <Switch
+                style="@style/SwitchStyle"
+                android:id="@+id/sw_compat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumb="@drawable/drawable_switch"
+                android:track="@drawable/drawable_bg"
+                android:layout_marginRight="@dimen/_10sdp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/drawable_shadow_down">
+
+        <LinearLayout
+            android:id="@+id/ll_car"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/drawable_shadow_down">
+
+
+            <ImageView
+                android:id="@+id/rb_Car"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_weight="0.1"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/rb_off" />
+
+            <TextView
+                android:id="@+id/tv_Car"
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="EHC(morning after pill)"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:textSize="@dimen/text_small_label"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pub"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/drawable_shadow_down">
+
+            <ImageView
+                android:id="@+id/rb_Pub"
+                android:layout_width="@dimen/_10sdp"
+                android:layout_weight="0.1"
+                android:paddingBottom="@dimen/_15sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/rb_off" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.8"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="Other"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:textSize="@dimen/text_small_label"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_upLoadText"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/drawable_shadow_down"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingBottom="@dimen/_15sdp">
+
+        <TextView
+            android:id="@+id/tv_upLoadText"
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:text="Benzethidine, Bufotenin, Carfentanil, Difenoxin, Etorphine"
+            android:textSize="@dimen/text_small_label"
+            android:textColor="@color/grey"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_15sdp"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/iv_upload"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:src="@drawable/ic_drop_down" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+    <View
+        android:id="@+id/shadow2"
+        android:layout_below="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_shadow_bottom_height"
+        android:background="@drawable/bottom_shadow_gradient"/>
+    </LinearLayout>
+</LinearLayout>

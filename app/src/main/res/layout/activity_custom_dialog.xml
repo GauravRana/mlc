@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/layout_Shadow"
+        style="@style/ms9_DefaultShadowStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ms9_affectsDisplayedPosition="true"
+        app:ms9_ambientShadowDrawablesList="@array/ms9_ambient_shadow_drawables_z18"
+        app:ms9_forceUseCompatShadow="true"
+        app:ms9_shadowElevation="@dimen/_15sdp"
+        app:ms9_shadowTranslationZ="@dimen/_15sdp"
+        app:ms9_spotShadowDrawablesList="@array/ms9_spot_shadow_drawables_z18"
+        app:ms9_useAmbientShadow="false"
+        app:ms9_useSpotShadow="true">
+
+
+        <LinearLayout
+            android:layout_width="@dimen/_245sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:background="@drawable/drawable_round_corner_white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="@dimen/_244sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/drawable_shadow_normal"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/_18sdp"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_18sdp"
+                    android:gravity="center"
+                    android:text="Open in Maps"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_details"
+                    android:textStyle="normal" />
+
+                <View
+                    android:id="@+id/view_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/grey"/>
+
+
+
+                <TextView
+                    android:id="@+id/tv_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/_18sdp"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_18sdp"
+                    android:gravity="center"
+                    android:text="Open in google maps"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_details"
+                    android:textStyle="normal" />
+
+                <View
+                    android:id="@+id/view_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.3dp"
+                    android:background="@color/grey"/>
+
+
+
+                <TextView
+                    android:id="@+id/tv_third"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/_18sdp"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_18sdp"
+                    android:gravity="center"
+                    android:text="Open in google maps"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_details"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView>
+</LinearLayout>

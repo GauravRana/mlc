@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/ll_deb_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/drawable_shadow_down"
+        android:paddingBottom="@dimen/_20sdp"
+        android:paddingTop="@dimen/_20sdp">
+
+        <TextView
+            android:id="@+id/tv_debLab"
+            android:layout_width="0dp"
+            android:layout_weight="0.7"
+            android:layout_height="wrap_content"
+            android:text="DBS Annual Update Service Number"
+            android:textSize="@dimen/text_small_label"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:paddingRight="@dimen/_10sdp" />
+
+        <EditText
+            android:id="@+id/tv_debNum"
+            android:layout_width="0dp"
+            android:layout_weight="0.3"
+            android:layout_height="match_parent"
+            android:text=""
+            android:gravity="end|center"
+            android:background="@null"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:layout_gravity="center"
+            android:focusable="false"
+            android:textSize="@dimen/text_small_label"
+            android:textColor="@color/black"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/shadow2"
+        android:layout_below="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_shadow_bottom_height"
+        android:background="@drawable/bottom_shadow_gradient"/>
+
+</LinearLayout>

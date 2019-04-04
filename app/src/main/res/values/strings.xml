@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MLC Pharmacy</string>
+
+    <string name="facebook_app_id">721390138241938</string>
+
+
+    <string name="text_signup">Sign Up</string>
+    <string name="text_signIn">Sign In</string>
+    <string name="text_already">Already have an account? Sign In</string>
+    <string name="text_gphc">GPhC Number</string>
+    <string name="text_started">Get Started</string>
+    <string name="text_next">Next</string>
+
+    <string name="text_email">Email</string>
+    <string name="text_pass">Password</string>
+    <string name="text_mobile">Mobile</string>
+    <string name="text_acc">Account Details</string>
+    <string name="text_name">Name</string>c
+    <string name="text_welcome">Welcome Back</string>
+    <string name="text_f">Forgot password?</string>
+    <string name="text_s">Don\'t have an account? Sign Up</string>
+    <string name="text_reset">Reset Password</string>
+    <string name="text_submit">Submit</string>
+    <string name="text_agree">I accept the\u0020</string>
+    <string name="text_tc">Terms &amp; Conditions</string>
+
+    <string name="applicationId">com.mylocumchoice.MyLocumChoicePharmacy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="text_empty"></string>
+
+    <string name="text_upcoming">Upcoming</string>
+    <string name="text_applied">Applied</string>
+    <string name="text_invitations">Invitations</string>
+    <string name="text_completed">Completed</string>
+    <string name="text_cancelled">Cancelled</string>
+
+    <string name="text_newest">Newest</string>
+    <string name="text_hourly">Hourly Rate</string>
+    <string name="text_highest">Highest</string>
+    <string name="text_distance">Distance</string>
+    <string name="text_least">Least</string>
+    <string name="text_date">Date</string>
+    <string name="text_asc">Ascending</string>
+    <string name="text_desc">Descending</string>
+
+
+    <string name="text_emergency">Emergency</string>
+    <string name="text_coutries">Counties</string>
+    <string name="text_dist">Distance</string>
+    <string name="text_min">Minimum Hourly Rate</string>
+    <string name="text_date_range">Date Range</string>
+
+    <string name="text_more">More</string>
+
+    <string name="text_start_date">Start Date</string>
+    <string name="text_end_date">End Date</string>
+    <string name="text_apply">Apply</string>
+
+
+    <string name="text_add">Address</string>
+    <string name="text_add1">Address Line 1</string>
+    <string name="text_add2">Address Line 2</string>
+    <string name="text_add3">Address Line 3</string>
+
+    <string name="text_town">Town</string>
+    <string name="text_country">Country</string>
+    <string name="text_country_region">Country/Region</string>
+    <string name="text_county">County</string>
+    <string name="text_mob">Mobile</string>
+    <string name="text_expiry">Expires On</string>
+    <string name="text_gphc_reg_det">GPhC Registration Details</string>
+    <string name="text_con_det">Contact Us</string>
+    <string name="text_update">Update</string>
+    <string name="text_upload">Upload CV  &lt;font color="#c0c0c0"&gt;\(Optional\)&lt;/font&gt;</string>
+
+    <string name="text_basic_det">Basic Details</string>
+
+    <string name="text_change_pwd">Change Password</string>
+    <string name="text_prefs">Preferences</string>
+    <string name="text_right">Right to Work</string>
+    <string name="text_skills">Skills &amp; Accreditations</string>
+    <string name="text_refer">References</string>
+    <string name="text_pharma">Some pharmacies require you to sign a few documents to be able to work with them.</string>
+    <string name="text_pharma_specific">Pharmacy-Specific Compliance</string>
+
+    <string name="text_shop">Shop</string>
+    <string name="text_help">Help</string>
+    <string name="text_contact">Contact Us</string>
+    <string name="text_terms">Terms</string>
+    <string name="text_logout">Log Out</string>
+    <string name="text_deactivate">Deactivate Account</string>
+
+
+    <string name="text_open_shift">Open Shifts</string>
+    <string name="text_booking">Bookings</string>
+    <string name="text_calender">Calendar</string>
+    <string name="text_account">Account</string>
+    <string name="text_notify">Notifications</string>
+
+    <string name="text_old_pwd">Old Password</string>
+    <string name="text_new_pwd">New Password</string>
+    <string name="text_confirm_pwd">Confirm Password</string>
+
+    <string name="text_chang_pwd">Change Password</string>
+
+    <string name="text_dista">Less than 5 miles away</string>
+
+    <string name="text_vacant">No. of vacancies</string>
+    <string name="text_milaege">Mileage &amp; Other Perks</string>
+    <string name="text_sys">System</string>
+    <string name="text_pace">Pace</string>
+    <string name="text_break">Lunch Break</string>
+
+    <string name="text_r_breaks">Religious Breaks</string>
+    <string name="text_parking">Parking Details</string>
+    <string name="text_staffing">Staffing Levels</string>
+    <string name="text_m_det">Mandatory Requirements</string>
+    <string name="text_skill">Skills</string>
+
+
+    <string name="text_done">Done</string>
+    <string name="text_search">Search</string>
+    <string name="text_search_pharmacy">Search for Pharmacy</string>
+
+    <string name="text_select_pharmacy">Select Pharmacy</string>
+    <string name="text_clear">Clear</string>
+
+    <string name="text_war_name_required">Required</string>
+    <string name="text_war_name">Enter a valid name</string>
+    <string name="text_war_email">Enter a valid email</string>
+    <string name="text_war_gphc">Enter a valid GPhC number</string>
+    <string name="text_war_pwd">Must be 8 characters long</string>
+    <string name="text_war_mobile">Enter a valid phone number</string>
+    <!-- PREFERENCE SCREEN -->
+    <string name="text_pref">Preferences</string>
+    <!-- Skills & Acc -->
+    <string name="text_system">Pharmacy Systems</string>
+    <string name="text_accr">Accreditations</string>
+    <string name="text_SandA">Skills &amp; Accreditations</string>
+    <string name="num_shifts">35 open shifts</string>
+    <string name="text_right2work">Right To Work</string>
+    <string name="text_receive_info"><u>Receive Information Form</u></string>
+    <string name="text_reference_info"><u>Receive Reference Form</u></string>
+    <string name="text_receive_doc"><u>Receive Documents</u></string>
+    <string name="text_reference">References</string>
+
+    <string name="text_booking_details">Booking Details</string>
+
+    <string name="text_open_maps">Open in Maps</string>
+    <string name="text_google_maps">Open in Google Maps</string>
+
+    <string name="text_cp">Cancellation Policy</string>
+    <string name="text_pp">Payment Policy</string>
+
+    <string name="text_cb">Cancel Booking</string>
+
+    <string name="text_hide">Hide me from this Pharmacy</string>
+
+    <string name="text_pend">Pending</string>
+    <string name="text_app">Applied</string>
+
+    <string name="text_dec">Declined</string>
+
+    <string name="text_accept">Accept</string>
+    <string name="text_offer">Make an Offer</string>
+
+
+    <string name="text_history">Bookings History</string>
+    <string name="text_payment"><u>Receive Payment Summary</u></string>
+    <string name="text_earned">Earned</string>
+
+    <string name="text_paid_booking">Paid Bookings</string>
+    <string name="text_book_details">Booking Details</string>
+    <string name="text_Cancle_details">Cancellation Details</string>
+    <string name="text_payment_details">Payment Details</string>
+    <string name="text_unPaid_booking">Unpaid Bookings</string>
+    <string name="text_duration">Shift Duration</string>
+    <string name="text_other">Other</string>
+    <string name="text_unPaid_break">Unpaid Breaks</string>
+    <string name="text_ExtraHours">Extra Hours</string>
+    <string name="text_other_pay">Other Payments</string>
+    <string name="text_summary">Summary</string>
+    <string name="text_total_hours">Total Hours</string>
+    <string name="text_hours">Total Hours</string>
+    <string name="text_amount">Total Amount</string>
+    <string name="text_paid">Mark As Paid</string>
+    <string name="text_Rate">Hourly Rate</string>
+    <string name="google_places_key">AIzaSyC6eWqmITaikVnIYx8-el_X5j7tzPy0mhA</string>
+    <string name="title_activity_booking_details">BookingDetailsActivity</string>
+    <string name="text_gps_network_not_enabled">GPS Network not enabled</string>
+    <string name="text_open_location_settings">Open Location Settings</string>
+    <string name="text_cancel">Cancel</string>
+    <string name="text_ok">OK</string>
+    <string name="text_permission_Denied">Permission Denied</string>
+    <string name="text_gps">Turn On GPS</string>
+    <string name="text_Location">Your current location is required for showing relevant shifts. Please allow access to the same.</string>
+    <string name="text_permission">Location Permission Needed</string>
+    <string name="text_cancel_by">Cancelled By</string>
+    <string name="text_cancel_on">Cancelled On</string>
+    <string name="text_reason">Reason</string>
+    <string name="text_sort">Filter &amp; Sort</string>
+
+    <string name="text_select_counties">Select Counties</string>
+
+    <string name="text_via_email">Send by Email</string>
+
+    <string name="text_mandatory_policy">Mandatory Policies</string>
+    <string name="text_tu">1. Terms of Use</string>
+    <string name="text_accept_use">2. Acceptable Use Policy</string>
+    <string name="text_dp">3. Data and Privacy Policy</string>
+    <string name="text_cancelR">Cancellation Rate: </string>
+    <string name="text_cancelB">Cancel Booking</string>
+
+
+    <string name="text_mandatory_policy_n">Mandatory Policies</string>
+    <string name="text_tu_n">Terms of Use</string>
+    <string name="text_accept_use_n">Acceptable Use Policy</string>
+    <string name="text_dp_n">Data and Privacy Policy</string>
+    <string name="text_dp_g">Google Places Terms And Privacy Policy</string>
+    <string name="text_ph">Pharmacies</string>
+    <string name="text_stat">Payment Status</string>
+    <string name="text_photo_request">Please Choose the photo</string>
+    <string name="text_post_code">Postcode</string>
+    <string name="title_activity_splash">Sign in</string>
+    <string name="title_ask_date">Please choose Date</string>
+    <string name="text_ins"><u>National Insurance.pdf</u></string>
+    <string name="text_mur"><u>MUR Certificate.pdf</u></string>
+    <string name="text_jason"><u>Jason|ReferenceDoc.pdf</u></string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">Required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing emailcompletions."</string>
+    <string name="tv_c_Name">Password is incorrect</string>
+    <string name="tv_o_Name">Password is incorrect</string>
+    <string name="tv_n_Name">Password is incorrect</string>
+    <string name="tv_pur"><u>Pending User Response</u></string>
+    <string name="tv_cancel"><u>Cancel</u></string>
+    <string name="tv_milPerk">Mileage &amp; Other Perks</string>
+    <string name="text_clear_instant">clear</string>
+    <string name="tv_contact">This booking can no longer be cancelled. Kindly <u><b>contact the admin</b></u> in case of an emergency.</string>
+    <string name="sign_up_button">Sign Up</string>
+    <string name="sign_in_button">Sign In</string>
+    <string name="sign_up_link">Don\'t have an account? Sign Up</string>
+    <string name="sign_in_link">Already have an account? Sign In</string>
+
+
+    <string name="errorTimeOut">Oops! Something went wrong.</string>
+    <string name="selectStartDate">Please select start date first.</string>
+
+
+    <string name="help">Help</string>
+    <string name="guided_tour">Guided Tour</string>
+    <string name="videos">Videos</string>
+    <string name="faq"> FAQs</string>
+    <string name="deact">Deactivate Account</string>
+
+    <string name="choose_camera">Choose Camera</string>
+    <string name="choose_doc">Choose Document</string>
+    <string name="choose_photo">Choose Photo</string>
+
+    <string name="ph_sys">Which Pharmacy Systems are you comfortable using?</string>
+
+    <string name="text_sign_out">You have been signed out of the app. Please sign-in again.</string>
+
+    <string name="reason">Reason can\'t be blank</string>
+    <string name="password">Please enter password</string>
+
+    <string name="activate_dialog">Would you like to activate your account?</string>
+    <string name="logoutText">Are you sure you want to log out?</string>
+
+
+    <string name="mandatory">Mandatory</string>
+    <string name="single">single</string>
+    <string name="multiple">multiple</string>
+
+    <string name="choose_option">Choose Option</string>
+    <string name="title_activity_mark_as_busy">MarkAsBusyActivity</string>
+
+
+    <string name="newest">newest</string>
+    <string name="hourly_rate">rate_desc</string>
+    <string name="distance">distance_asc</string>
+    <string name="date_asc">date_asc</string>
+    <string name="date_desc">date_desc</string>
+    <string name="pace">Pace: </string>
+    <string name="accept">Accept</string>
+    <string name="apply">Apply</string>
+    <string name="cancel">Cancel</string>
+    <string name="pound">£</string>
+    <string name="perhour">/hr</string>
+    <string name="status">Status: </string>
+    <string name="handle_strange_error">Oops! Something went wrong</string>
+    <string name="step_verification">Steps for Verification</string>
+    <string name="not_applicable">N/A</string>
+
+    <string name="noCompliance">There are no pharmacies that require specific compliance documents yet.</string>
+    <string name="noEvents">There are no upcoming events yet.</string>
+    <string name="noOpenShifts">No open shifts found. Try adjusting your filters for a different result set.</string>
+    <string name="noUpcomingBookings">You do not have any upcoming bookings yet. Go ahead and book a shift.</string>
+    <string name="noPendingBookings">You have not applied for a shift yet. Go ahead and apply for one.</string>
+    <string name="noDeclinedBookings">None of your applications have been declined in the past month.</string>
+    <string name="noInvitations">You have not received any invitations yet.</string>
+    <string name="noCompletedBookings">No completed bookings found. Go ahead and book a shift.</string>
+    <string name="noCancelledBookings">You have no cancelled bookings for the past 6 months.</string>
+    <string name="noNewNotifications">You have no new notifications yet.</string>
+    <string name="noCalendarEvents">No Events</string>
+    <string name="providePerm">Please allow access to Camera &amp; Storage through the phone\'s settings.</string>
+
+
+    <!--
+    Confirmation Dialog
+    -->
+
+    <string name="confirm_hide">Are you sure you want to hide from this pharmacy?</string>
+    <string name="confirm_cancel">Are you sure you want to withdraw this application?</string>
+    <string name="privacy_policy">Google Places Terms And Privacy Policy</string>
+    <string name="updater">There is a newer version of this application available. Click \"Ok\" to update now.</string>
+    <string name="pharma_sp">Pharmacy-Specific Compliance</string>
+
+</resources>

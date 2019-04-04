@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.emilsjolander.components.StickyScrollViewItems.StickyScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:whatever="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_main"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <View
+                android:id="@+id/shadow"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_shadow_top_height"
+                android:background="@drawable/top_shadow_gradient"/>
+
+            <LinearLayout
+                android:tag="sticky"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:tag="sticky"
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:gravity="center"
+                    android:text="Mandatory"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_details_big"
+                    android:background="@drawable/drawable_shadow_normal"/>
+
+                <View
+                    android:id="@+id/shadow21"
+                    android:layout_below="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_shadow_bottom_height"
+                    android:background="@drawable/bottom_shadow_gradient"/>
+            </LinearLayout>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</com.emilsjolander.components.StickyScrollViewItems.StickyScrollView>

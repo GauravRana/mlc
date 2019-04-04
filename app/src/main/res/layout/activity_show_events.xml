@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.calender.activities.ShowEventsActivity"
+    android:orientation="vertical"
+    style="@style/statusBarHeader">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/screen_background">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/content_header"/>
+
+        <LinearLayout
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/margin_15dp">
+
+            <View
+                android:id="@+id/shadow5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_shadow_top_height"
+                android:background="@drawable/top_shadow_gradient"/>
+
+
+            <LinearLayout
+                android:id="@+id/ll_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:orientation="horizontal"
+                android:background="@drawable/drawable_shadow_down">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:textSize="@dimen/text_details"
+                    android:textColor="@color/black"
+                    android:text="Date" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_details"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_15sdp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_Date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:background="@drawable/drawable_shadow_down">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:textSize="@dimen/text_details"
+                    android:textColor="@color/black"
+                    android:text="Title" />
+
+                <TextView
+                    android:id="@+id/tv_Date"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_details"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_15sdp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_StartTime"
+                android:layout_below="@+id/space5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="@drawable/drawable_shadow_down">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Starts"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:textSize="@dimen/text_details"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_startTime"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:paddingBottom="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_details" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_EndTime"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:orientation="horizontal"
+                android:background="@drawable/drawable_shadow_down">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:textSize="@dimen/text_details"
+                    android:textColor="@color/black"
+                    android:text="Ends" />
+
+                <TextView
+                    android:id="@+id/tvEndTime"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_details"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_15sdp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_Repeat"
+                android:layout_below="@+id/ll_StartDate"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:orientation="horizontal"
+                android:background="@drawable/drawable_shadow_down">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:textSize="@dimen/text_details"
+                    android:textColor="@color/black"
+                    android:text="Repeat" />
+
+                <TextView
+                    android:id="@+id/tv_repeat"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_details"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_15sdp"/>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/shadow6"
+                android:layout_below="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_shadow_bottom_height"
+                android:background="@drawable/bottom_shadow_gradient"/>
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_frameLayout"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView
+                style="@style/ms9_DefaultShadowStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                app:ms9_shadowTranslationZ="@dimen/_5sdp"
+                app:ms9_shadowElevation="@dimen/_10sdp"
+                app:ms9_useAmbientShadow="false"
+                app:ms9_useSpotShadow="true"
+                app:ms9_forceUseCompatShadow="true"
+                app:ms9_affectsDisplayedPosition="true"
+                app:ms9_spotShadowDrawablesList="@array/ms9_spot_shadow_drawables_z18"
+                app:ms9_ambientShadowDrawablesList="@array/ms9_ambient_shadow_drawables_z18">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </LinearLayout>
+            </com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+
+                <TextView
+                    style="@style/TextViewRect"
+                    android:id="@+id/btn_accept"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delete Event" />
+
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

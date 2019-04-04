@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".view.shifts.activities.PaceActivity"
+    style="@style/statusBarHeader">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/screen_background">
+
+    <include android:id="@+id/toolbar"
+        layout="@layout/content_header"/>
+
+    <View
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_shadow_top_height"
+        android:background="@drawable/top_shadow_gradient"/>
+
+    <!--<LinearLayout
+        android:layout_below="@+id/shadow"
+        android:id="@+id/ll_quiet"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/drawable_shadow_down">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:text="Quiet"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small_label"/>
+
+        <ImageView
+            android:id="@+id/tg_quiet"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@drawable/check"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textOff=""
+            android:textOn="" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/ll_quiet"
+        android:id="@+id/ll_moderate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/drawable_shadow_down">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:text="Moderate"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small_label"/>
+
+        <ImageView
+            android:id="@+id/tg_Mod"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@drawable/check"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textOff=""
+            android:textOn="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/ll_moderate"
+        android:id="@+id/ll_busy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@drawable/drawable_shadow_down">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical"
+            android:text="Busy"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small_label"/>
+
+        <ImageView
+            android:id="@+id/tg_busy"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:background="@drawable/check"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textOff=""
+            android:textOn=""/>
+
+    </LinearLayout>-->
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_pace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shadow"></android.support.v7.widget.RecyclerView>
+
+        <View
+            android:id="@+id/shadow24"
+            android:layout_below="@+id/rv_pace"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_shadow_bottom_height"
+            android:background="@drawable/bottom_shadow_gradient"/>
+
+   <!-- <View
+        android:id="@+id/shadow2"
+        android:layout_below="@+id/rv_pace"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_shadow_bottom_height"
+        android:background="@drawable/bottom_shadow_gradient"/>-->
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_frameLayout"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView
+                style="@style/ms9_DefaultShadowStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_62sdp"
+                app:ms9_shadowTranslationZ="@dimen/_5sdp"
+                app:ms9_shadowElevation="@dimen/_10sdp"
+                app:ms9_useAmbientShadow="false"
+                app:ms9_useSpotShadow="true"
+                app:ms9_forceUseCompatShadow="true"
+                app:ms9_affectsDisplayedPosition="true"
+                app:ms9_spotShadowDrawablesList="@array/ms9_spot_shadow_drawables_z18"
+                app:ms9_ambientShadowDrawablesList="@array/ms9_ambient_shadow_drawables_z18">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </LinearLayout>
+            </com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+
+                <TextView
+                    style="@style/TextViewRect"
+                    android:id="@+id/btn_accept"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_42sdp"
+                    android:text="Done"/>
+
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

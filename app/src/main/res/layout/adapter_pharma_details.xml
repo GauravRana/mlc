@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/screen_background">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/ll_pharma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pharmacy Details"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/text_small_label"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_5sdp"/>
+
+
+    <View
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_shadow_top_height"
+        android:background="@drawable/top_shadow_gradient"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pharma_det"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/drawable_shadow_down">
+
+        <TextView
+            android:id="@+id/tv_pharma"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:text=""
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_small_label" />
+
+        <TextView
+            android:id="@+id/tv_pharma_det"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center_vertical|right"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_small_label"
+            android:layout_marginRight="@dimen/_15sdp"/>
+    </LinearLayout>
+</LinearLayout>

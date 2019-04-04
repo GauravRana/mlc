@@ -1,0 +1,90 @@
+package com.mylocumchoice.MyLocumChoicePharmacy.view.shifts.adapters;
+
+import android.content.Context;
+import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.mylocumchoice.MyLocumChoicePharmacy.R;
+import com.mylocumchoice.MyLocumChoicePharmacy.utils.RecyclerViewClickListener;
+import com.mylocumchoice.MyLocumChoicePharmacy.view.base.BaseFragment;
+
+import butterknife.OnClick;
+
+public class OpenShiftAdapter extends RecyclerView.Adapter<OpenShiftAdapter.ViewHolder> {
+    private RecyclerViewClickListener mListener;
+    private Context mContext;
+    private BaseFragment fragment;
+    private String from;
+
+    public OpenShiftAdapter(BaseFragment fragment, Context mContext,RecyclerViewClickListener listener) {
+            this.mListener = listener;
+            this.mContext = mContext;
+            this.fragment = fragment;
+            this.from = from;
+    }
+    public class ViewHolder extends RecyclerView.ViewHolder{
+        public ViewHolder(View v) {
+            super(v);
+        }
+        de.hdodenhof.circleimageview.CircleImageView ivProfile;
+        TextView tvHead;
+        TextView tvPrice;
+        ImageView ivNotify;
+        ImageView ivTeal;
+        ImageView ivCal;
+        TextView tvDate;
+        ImageView ivClock;
+        TextView tvTime;
+        ImageView ivLoc;
+        TextView tvPlace;
+    }
+
+    // Create new views (invoked by the layout manager)
+    @Override
+    public OpenShiftAdapter.ViewHolder onCreateViewHolder(ViewGroup parent,
+                                                          int viewType) {
+        // create a new view
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        View v = inflater.inflate(R.layout.adapter_openshift, parent, false);
+        //ButterKnife.bind(this,v);
+        // set the view's size, margins, paddings and layout parameters
+        final ViewHolder vh = new ViewHolder(v);
+        vh.ivTeal = v.findViewById(R.id.iv_teal);
+        vh.ivNotify = v.findViewById(R.id.iv_Notify);
+        v.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mListener.onClick(v,vh.getAdapterPosition());
+            }
+        });
+
+        return vh;
+    }
+
+    @OnClick(R.id.iv_loc)
+        public void onLocClick(){
+
+    }
+
+    // Replace the contents of a view (invoked by the layout manager)
+    @Override
+    public void onBindViewHolder(ViewHolder holder, final int position) {
+//        if(position % 2 == 0) {
+//            holder.ivNotify.setVisibility(View.GONE);
+//        }else{
+//            holder.ivTeal.setVisibility(View.GONE);
+//        }
+    }
+
+
+    @Override
+    public int getItemCount() {
+        return 15;
+    }
+
+
+}

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/drawable_shadow_normal"
+        android:paddingTop="@dimen/_19sdp"
+        android:paddingBottom="@dimen/_19sdp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_field"
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/text_small_label"
+            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/_15sdp"/>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.20"
+            android:gravity="right"
+            android:layout_marginLeft="@dimen/_20sdp">
+
+            <ImageView
+                android:visibility="visible"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_drop_down"
+                android:layout_marginRight="@dimen/_12sdp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/drawable_shadow_normal">
+
+            <LinearLayout
+                android:id="@+id/ll_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:background="@drawable/drawable_shadow_down">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:text="Please select your method of travel for work."
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_small_label" />
+
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_below_field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/drawable_shadow_normal"
+                android:paddingTop="@dimen/_19sdp"
+                android:paddingBottom="@dimen/_19sdp">
+
+                <TextView
+                    android:id="@+id/tv_below_field"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/text_small_label"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="@dimen/_15sdp"/>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.20"
+                    android:gravity="right"
+                    android:layout_marginLeft="@dimen/_20sdp">
+
+                    <ImageView
+                        android:visibility="visible"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_drop_down"
+                        android:layout_marginRight="@dimen/_12sdp"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvOther"
+                    android:visibility="gone"
+                    android:background="@drawable/drawable_shadow_down"
+                    android:textColor="@color/grey"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:maxLines="2"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingRight="@dimen/_15sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_55sdp" />
+
+        </LinearLayout>
+    </LinearLayout>
+        <View
+            android:id="@+id/shadow2"
+            android:layout_below="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_shadow_bottom_height"
+            android:background="@drawable/bottom_shadow_gradient"/>
+    </LinearLayout>
+
+</RelativeLayout>

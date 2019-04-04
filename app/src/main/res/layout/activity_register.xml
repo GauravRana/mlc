@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.signup.activities.RegisterActivity"
+    android:orientation="vertical"
+    android:id="@+id/scView"
+    android:background="@drawable/backg"
+    android:clickable="true"
+    android:focusableInTouchMode="true">
+
+    <com.mylocumchoice.MyLocumChoicePharmacy.utils.LockableScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:isScrollContainer="false">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_logo"
+                android:layout_below="@+id/iv_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:src="@drawable/logo_small" />
+
+            <TextView
+                android:id="@+id/getStart"
+                android:layout_below="@+id/iv_logo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:text="Get Started"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_very_big_label"
+                android:textAppearance="@style/TextAppearance.FontPathRegular"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_275sdp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:outlineProvider="bounds"
+            android:paddingTop="@dimen/_15sdp"
+            android:paddingBottom="@dimen/_15sdp">
+
+        <LinearLayout
+            android:elevation="@dimen/_10sdp"
+            android:stateListAnimator="@null"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/editext_drawable"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp">
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_gphc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.40"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:text="@string/text_gphc"
+                android:textAppearance="@style/TextAppearance.FontPathRegular"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_small_label" />
+
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.60">
+
+                <EditText
+                    android:id="@+id/et_gphc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:textCursorDrawable="@drawable/cursor_drawable"
+                    android:textColor="@color/textColor"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:gravity="end|center"
+                    android:imeOptions="actionDone"
+                    android:maxLength="7"
+                    android:inputType="number"
+                    android:textAppearance="@style/TextAppearance.FontPathRegular"
+                    android:textSize="@dimen/text_small_label" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_w_Gphc"
+                    android:layout_width="match_parent"
+                    android:gravity="right"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|center"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:textColor="@color/warning"
+                    android:text="@string/error_field_required"
+                    android:textAppearance="@style/TextAppearance.FontPathRegular"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:visibility="gone"
+                android:background="@color/light_grey" />
+            <LinearLayout
+                android:id="@+id/ll_Expiry"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:visibility="gone"
+                android:background="@drawable/editext_drawable"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.30"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_Exp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.6"
+                    android:gravity="bottom"
+                    android:text="@string/text_expiry"
+                    android:textAppearance="@style/TextAppearance.FontPathRegular"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/text_small_label" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.4"
+                        android:gravity="top"
+                        android:text="Optional"
+                        android:textAppearance="@style/TextAppearance.FontPathRegular"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/_10sdp" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.70">
+
+                    <TextView
+                        android:id="@+id/et_exp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_weight="0.5"
+                        android:gravity="end|center"
+                        android:textAppearance="@style/TextAppearance.FontPathRegular"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/text_small_label" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tv_w_exp"
+                        android:layout_width="match_parent"
+                        android:gravity="right"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_height="wrap_content"
+                        android:paddingEnd="@dimen/_10sdp"
+                        android:layout_gravity="bottom|center"
+                        android:textSize="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:textColor="@color/warning"
+                        android:text="@string/error_field_required"
+                        android:textAppearance="@style/TextAppearance.FontPathRegular"/>
+
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            style="@style/TextViewRound"
+            android:id="@+id/tv_next"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_next" />
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom">
+
+            <TextView
+                android:id="@+id/tv_SignIN"
+                android:layout_below="@+id/btn_Shadow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
+                android:gravity="center"
+                android:textSize="@dimen/text_small_label"
+                android:textColor="@color/textColor"
+                android:text="@string/text_already"
+                android:textAppearance="@style/TextAppearance.FontPathRegular"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/extra"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="@dimen/_220sdp">
+        </LinearLayout>
+    </LinearLayout>
+
+    </com.mylocumchoice.MyLocumChoicePharmacy.utils.LockableScrollView>
+
+
+</RelativeLayout>

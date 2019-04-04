@@ -1,0 +1,341 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <!--
+        <item name="android:windowTranslucentStatus">true</item>
+        -->
+        <!--
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        -->
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@drawable/drawable_outline_theme_color</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+
+
+    <!-- MAIN Styles File -->
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+
+    <!-- Switch style-->
+    <style name="SwitchCompatStyle" parent="Theme.AppCompat.Light">
+        <item name="android:thumb">@drawable/ic_switch</item>
+    </style>
+
+
+    <style name="SwitchStyle" parent="Theme.AppCompat.Light">
+        <item name="android:scaleY">0.91</item>
+        <item name="android:scaleX">0.91</item>
+    </style>
+
+
+    <!-- Style for Tab Text -->
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">@dimen/text_small_label</item>
+    </style>
+
+
+    <!-- PROGRESS DIALOG -->
+    <style name="alert_process_dialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <!-- ROUND BUTTONS -->
+    <style name="TextViewRound" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">@style/TextAppearance.FontPathBoldSemiBold</item>
+        <item name="android:textSize">@dimen/text_details</item>
+        <item name="android:background">@drawable/bgr_back</item>
+        <item name="android:height">60dp</item>
+        <item name="android:layout_marginRight">@dimen/_25sdp</item>
+        <item name="android:layout_marginLeft">@dimen/_25sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:elevation">@dimen/_15sdp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+
+
+    <style name="TextViewRoundNoShadow" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">@style/TextAppearance.FontPathBoldSemiBold</item>
+        <item name="android:textSize">@dimen/text_details</item>
+        <item name="android:background">@drawable/bgr_back</item>
+        <item name="android:height">60dp</item>
+        <item name="android:layout_marginRight">@dimen/_25sdp</item>
+        <item name="android:layout_marginLeft">@dimen/_25sdp</item>
+        <item name="android:gravity">center</item>
+        <!--<item name="android:elevation">@dimen/_3sdp</item>-->
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+
+    <!-- SQUARE BUTTONS -->
+    <style name="TextViewRect" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">@style/TextAppearance.FontPathBoldSemiBold</item>
+        <item name="android:textSize">@dimen/text_details</item>
+        <item name="android:background">@drawable/bg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:height">@dimen/_42sdp</item>
+    </style>
+
+
+    <!-- SQUARE HALF BUTTONS -->
+    <style name="TextViewRectHalf" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textAppearance">@style/TextAppearance.FontPathBoldSemiBold</item>
+        <item name="android:textSize">@dimen/text_details</item>
+        <item name="android:gravity">center</item>
+        <item name="android:height">@dimen/_42sdp</item>
+    </style>
+
+
+    <!-- Font library used styles -->
+
+    <style name="TextAppearance.FontPathRegular" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/SanFranciscoText_Regular.otf</item>
+    </style>
+
+    <style name="TextAppearance.FontPathSemiBoldItalic" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/SanFranciscoText-SemiboldItalic.otf</item>
+
+    </style>
+
+    <style name="TextAppearance.FontPathRegularItalic" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/SanFranciscoText-RegularItalic.otf</item>
+    </style>
+
+    <style name="TextAppearance.FontPathMedItalic" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/SanFranciscoText-MediumItalic.otf</item>
+    </style>
+
+    <style name="TextAppearance.FontPathMedium" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/ SanFranciscoText-Medium.otf"</item>
+    </style>
+
+    <style name="TextAppearance.FontPathLightItalic" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/SanFranciscoText-LightItalic.otf</item>
+    </style>
+
+    <style name="TextAppearance.FontPathLight" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/ SanFranciscoText-Light.otf</item>
+    </style>
+
+    <style name="TextAppearance.FontPathHeavyItalic" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/SanFranciscoText-HeavyItalic.otf</item>
+    </style>
+
+    <style name="TextAppearance.FontPathHeavy" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/ SanFranciscoText-Heavy.otf</item>
+    </style>
+
+    <style name="TextAppearance.FontPathBoldItalic" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/SanFranciscoText-BoldItalic.otf</item>
+    </style>
+
+    <style name="TextAppearance.FontPathBold" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/SanFranciscoText-Bold.otf</item>
+    </style>
+
+    <style name="TextAppearance.FontPathBoldSemiBold" parent="android:TextAppearance">
+        <!-- Custom Attr-->
+        <item name="fontPath">fonts/SanFranciscoText-Semibold.otf</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!-- Status Bar Header -->
+    <style name="statusBarHeader">
+        <item name="android:background">@drawable/bg1</item>
+    </style>
+
+
+    <style name="weekIndicatorStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+
+    <!-- Miscalleaneaus Styles -->
+
+    <style name="RoundedGradientButton">
+        <item name="android:layout_height">55dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="fontPath">fonts/SanFranciscoText-Semibold.otf</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@drawable/rounded_gradient_button</item>
+        <!--<item name="android:setClipToOutline"></item>>-->
+        <item name="android:elevation">55dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+
+    <style name="alert_dialog" parent="android:style/Theme.Dialog">
+        <!-- Background color and transparency -->
+        <item name="android:background">@android:color/transparent</item>
+        <item name="theme">@android:style/Theme.Translucent.NoTitleBar</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- Whether it is above activity -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- Is fuzzy? -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:overScrollMode">ifContentScrolls</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--
+        <item name="android:statusBarColor">@color/trans_white</item>
+        -->
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!--<item name="android:windowDisablePreview">true</item>-->
+
+        <!--
+        item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+        -->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <style name="LibAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@android:color/background_light</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="PickerTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@color/colorPrimary</item>
+        <item name="tabGravity">fill</item>
+        <item name="tabMaxWidth">0dp</item>
+        <item name="tabSelectedTextColor">@color/white</item>
+        <item name="tabTextAppearance">@style/TextAppearance.FontPathBoldSemiBold</item>
+    </style>
+
+    <style name="SmoothCheckBoxStyle">
+        <item name="color_checked">@color/checkbox_color</item>
+        <item name="color_unchecked">@android:color/white</item>
+        <item name="color_unchecked_stroke">@color/checkbox_unchecked_color</item>
+        <item name="color_tick">@android:color/white</item>
+    </style>
+
+    <style name="DatePickerDialogCustom" parent="@style/Theme.AppCompat.Dialog">
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:datePickerStyle">@style/DatePickerCustom</item>
+    </style>
+
+    <style name="DatePickerCustom" parent="@android:style/Widget.Material.DatePicker">
+        <item name="android:headerBackground">@color/colorAccent</item>
+    </style>
+
+
+    <style name="DialogTheme" parent="@style/Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+
+
+    <style name="MonthPickerDialogStyle" >
+
+        <!--
+        <item name="monthBgColor">@color/bgColor</item>
+        <item name="monthBgSelectedColor">@color/colorAccent</item>
+        <item name="monthFontColorSelected">@color/selectionColor</item>
+        <item name="monthFontColorNormal">@color/bgColor</item>
+        <item name="monthFontColorDisabled">@color/bgColor</item>
+
+        -->
+
+        <item name="headerBgColor">@color/colorPrimary</item>
+        <item name="headerFontColorSelected">#fff</item>
+        <item name="headerFontColorNormal">#85FFFFFF</item>
+        <item name="headerTitleColor">#fff</item>
+
+        <item name="dialogActionButtonColor">@color/colorAccent</item>
+    </style>
+
+
+
+
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+
+    <style name="MyTheme" parent="android:Theme.Holo.Dialog">
+        <item name="android:alertDialogStyle">@style/CustomAlertDialogStyle</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+
+
+    <style name="CustomAlertDialogStyle">
+        <item name="android:bottomBright">@color/transparent</item>
+        <item name="android:bottomDark">@color/transparent</item>
+        <item name="android:bottomMedium">@color/transparent</item>
+        <item name="android:centerBright">@color/transparent</item>
+        <item name="android:centerDark">@color/transparent</item>
+        <item name="android:centerMedium">@color/transparent</item>
+        <item name="android:fullBright">@color/transparent</item>
+        <item name="android:fullDark">@color/transparent</item>
+        <item name="android:topBright">@color/transparent</item>
+        <item name="android:topDark">@color/transparent</item>
+    </style>
+
+</resources>

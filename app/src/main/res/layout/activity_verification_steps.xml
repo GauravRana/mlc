@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/statusBarHeader">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/screen_background">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/content_header"/>
+
+        <me.didik.component.StickyNestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llSticky"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/drawable_shadow_normal"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:tag="sticky">
+
+                    <LinearLayout
+                        android:id="@+id/ll_field"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/_2sdp"
+                        android:paddingTop="@dimen/_15sdp">
+
+                        <TextView
+                            android:id="@+id/tv_field"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_weight="0.9"
+                            android:text=""
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12sdp" />
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/_20sdp"
+                            android:layout_weight="0.20"
+                            android:gravity="right">
+
+                            <ImageView
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="@dimen/_12sdp"
+                                android:src="@drawable/ic_drop_down"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/drawable_shadow_normal"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/_15sdp"
+                        android:paddingTop="@dimen/_2sdp">
+
+                        <TextView
+                            android:id="@+id/tv_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:textColor="@color/grey"
+                            android:textSize="@dimen/text_small_label" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                 <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_verification"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/_42sdp"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_height="match_parent">
+                 </android.support.v7.widget.RecyclerView>
+
+            </LinearLayout>
+
+        </me.didik.component.StickyNestedScrollView>
+        
+        <LinearLayout
+            android:id="@+id/ll_frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView
+                    style="@style/ms9_DefaultShadowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    app:ms9_shadowTranslationZ="@dimen/_5sdp"
+                    app:ms9_shadowElevation="@dimen/_10sdp"
+                    app:ms9_useAmbientShadow="false"
+                    app:ms9_useSpotShadow="true"
+                    app:ms9_forceUseCompatShadow="true"
+                    app:ms9_affectsDisplayedPosition="true"
+                    app:ms9_spotShadowDrawablesList="@array/ms9_spot_shadow_drawables_z18"
+                    app:ms9_ambientShadowDrawablesList="@array/ms9_ambient_shadow_drawables_z18">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </LinearLayout>
+                </com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/tv_done"
+                        style="@style/TextViewRect"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Request Verification" />
+
+                    <TextView
+                        android:id="@+id/tv_unDone"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/btn_bg"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/white"
+                        android:text="Request Verification" />
+
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

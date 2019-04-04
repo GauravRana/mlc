@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingLeft="@dimen/_20sdp"
+    android:paddingRight="@dimen/_20sdp"
+    android:paddingTop="@dimen/_20sdp"
+    android:paddingBottom="@dimen/_20sdp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/drawable_round_corner_white"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_repeat"
+                android:textColor="@color/grey"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:gravity="center"
+                android:text="This is a repeating event"
+                android:paddingTop="@dimen/_20sdp"
+                android:paddingBottom="@dimen/_20sdp"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_15sdp"
+                android:textSize="@dimen/_11sdp"
+                android:layout_height="wrap_content"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0.3dp"
+                android:background="@color/grey"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:gravity="center"
+            android:text="Delete This Event Only"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:paddingLeft="@dimen/_18sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:textSize="@dimen/_11sdp"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0.3dp"
+            android:background="@color/grey"/>
+
+        <TextView
+            android:id="@+id/tv_delete_all"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:text="Delete All Future Events"
+            android:paddingLeft="@dimen/_18sdp"
+            android:paddingRight="@dimen/_15sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:textSize="@dimen/_11sdp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

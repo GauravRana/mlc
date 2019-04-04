@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/statusBarHeader"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".shifts.MakeAnOfferActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/screen_background"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/content_header" />
+
+        <LinearLayout
+            android:id="@+id/lay_upper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/shadow1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_shadow_top_height"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/top_shadow_gradient" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_below="@+id/space1"
+                android:background="@drawable/drawable_shadow_normal"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_weight="0.5"
+                    android:paddingBottom="@dimen/_10sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="@string/text_hourly"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_small_label" />
+
+                <LinearLayout
+                    android:id="@+id/ll_rate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_weight="0.5"
+                    android:gravity="right|center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_pound"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pound"
+                        android:textColor="@color/black"/>
+
+                    <EditText
+                        android:id="@+id/editText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="numberDecimal"
+                        android:textSize="@dimen/text_small_label" />
+
+                    <TextView
+                        android:id="@+id/tv_perHour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/perhour"
+                        android:visibility="gone"
+                        android:textColor="@color/black"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/shadow2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_shadow_bottom_height"
+                android:background="@drawable/bottom_shadow_gradient" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/space2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lay_upper"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:background="@color/screen_background"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:text="@string/tv_milPerk"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/text_small_label" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/space2"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/shadow3"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_shadow_top_height"
+                android:background="@drawable/top_shadow_gradient" />
+
+            <EditText
+                android:id="@+id/et_milage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:background="@color/white"
+                android:gravity="top"
+                android:paddingLeft="@dimen/_15sdp"
+                android:paddingRight="@dimen/_15sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:textSize="@dimen/text_small_label" />
+
+            <View
+                android:id="@+id/shadow4"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/text_shadow_bottom_height"
+                android:layout_below="@+id/tab_layout"
+                android:background="@drawable/bottom_shadow_gradient" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView
+                    style="@style/ms9_DefaultShadowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_62sdp"
+                    app:ms9_affectsDisplayedPosition="true"
+                    app:ms9_ambientShadowDrawablesList="@array/ms9_ambient_shadow_drawables_z18"
+                    app:ms9_forceUseCompatShadow="true"
+                    app:ms9_shadowElevation="@dimen/_10sdp"
+                    app:ms9_shadowTranslationZ="@dimen/_5sdp"
+                    app:ms9_spotShadowDrawablesList="@array/ms9_spot_shadow_drawables_z18"
+                    app:ms9_useAmbientShadow="false"
+                    app:ms9_useSpotShadow="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></LinearLayout>
+                </com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/btn_accept"
+                        style="@style/TextViewRect"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Submit" />
+
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.profile.activities.OfferActivity"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/screen_background">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/content_header"/>
+
+
+        <LinearLayout
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_below="@+id/shadow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:textSize="@dimen/text_small_label"
+                android:text="Milaege and other perks"
+                android:textColor="@color/grey" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/_68sdp">
+                <View
+                    android:id="@+id/shadow3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_shadow_top_height"
+                    android:background="@drawable/top_shadow_gradient"/>
+
+                <EditText
+                    android:id="@+id/et_Text"
+                    android:layout_below="@+id/shadow3"
+                    android:layout_above="@+id/shadow4"
+                    android:layout_width="match_parent"
+                    android:gravity="top"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:textSize="@dimen/text_small_label"
+                    android:padding="@dimen/_10sdp"
+                    android:text="" />
+
+                <View
+                    android:id="@+id/shadow4"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_height="@dimen/text_shadow_bottom_height"
+                    android:background="@drawable/bottom_shadow_gradient"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_frameLayout"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView
+                    style="@style/ms9_DefaultShadowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_70sdp"
+                    app:ms9_shadowTranslationZ="@dimen/_5sdp"
+                    app:ms9_shadowElevation="@dimen/_10sdp"
+                    app:ms9_useAmbientShadow="false"
+                    app:ms9_useSpotShadow="true"
+                    app:ms9_forceUseCompatShadow="true"
+                    app:ms9_affectsDisplayedPosition="true"
+                    app:ms9_spotShadowDrawablesList="@array/ms9_spot_shadow_drawables_z18"
+                    app:ms9_ambientShadowDrawablesList="@array/ms9_ambient_shadow_drawables_z18">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </LinearLayout>
+                </com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom">
+
+                    <TextView
+                        style="@style/TextViewRect"
+                        android:id="@+id/btn_accept"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Submit" />
+
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

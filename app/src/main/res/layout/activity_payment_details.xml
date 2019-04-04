@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".view.bookings.activities.PaymentDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/screen_background">
+
+        <include
+            android:id="@+id/header"
+            layout="@layout/content_header" />
+
+        <com.mylocumchoice.MyLocumChoicePharmacy.utils.LockableScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/header"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/shadow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_shadow_top_height"
+                        android:background="@drawable/top_shadow_gradient" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_shift"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@drawable/drawable_shadow_normal"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_weight="0.5"
+                            android:text="@string/text_duration"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/text_details" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:layout_weight="0.5"
+                            android:gravity="center_vertical|right"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/et_shifts"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="end"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:background="@null"
+                                android:enabled="false"
+                                android:gravity="right|center"
+                                android:inputType="numberDecimal"
+                                android:paddingLeft="@dimen/_3sdp"
+                                android:paddingRight="@dimen/_3sdp"
+                                android:text="8"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/text_details"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:id="@+id/tv_shiftHours"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="hours"
+                                android:textColor="@color/grey" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/shadow2"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_shadow_bottom_height"
+                        android:layout_below="@+id/tab_layout"
+                        android:background="@drawable/bottom_shadow_gradient" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/screen_background"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingLeft="@dimen/_15sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:textColor="@color/grey"
+                    android:text="@string/text_other" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/shadow3"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_shadow_top_height"
+                        android:background="@drawable/top_shadow_gradient" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_unPaidBreaks"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@drawable/drawable_shadow_down"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_weight="0.5"
+                            android:text="@string/text_unPaid_break"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/text_details" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:layout_weight="0.5"
+                            android:gravity="center_vertical|right"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/et_unPaidBreaks"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="end"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:background="@null"
+                                android:gravity="right|center"
+                                android:maxLength="5"
+                                android:inputType="time"
+                                android:paddingLeft="@dimen/_3sdp"
+                                android:paddingRight="@dimen/_3sdp"
+                                android:textSize="@dimen/text_details"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:id="@+id/tv_unpaidHours"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="hours"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_extraHours"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@drawable/drawable_shadow_down"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_weight="0.5"
+                            android:text="@string/text_ExtraHours"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/text_details" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:layout_weight="0.5"
+                            android:gravity="center_vertical|right"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/et_extraHours"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="end"
+                                android:layout_marginRight="@dimen/_3sdp"
+                                android:background="@null"
+                                android:gravity="center|right"
+                                android:inputType="time"
+                                android:maxLength="5"
+                                android:paddingLeft="@dimen/_3sdp"
+                                android:paddingRight="@dimen/_3sdp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_details"
+                                android:textStyle="normal" />
+
+                            <TextView
+                                android:id="@+id/tv_extraHours"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="hours"
+                                android:textColor="@color/black" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_otherPay"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@drawable/drawable_shadow_normal"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="@dimen/_10sdp"
+                        android:paddingTop="@dimen/_10sdp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_weight="0.5"
+                            android:text="@string/text_other_pay"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/text_details" />
+
+                        <EditText
+                            android:id="@+id/et_otherPay"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:layout_weight="0.5"
+                            android:background="@null"
+                            android:gravity="center|right"
+                            android:inputType="numberDecimal"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_details"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/shadow4"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_shadow_bottom_height"
+                        android:layout_below="@+id/tab_layout"
+                        android:background="@drawable/bottom_shadow_gradient" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:background="@color/screen_background"
+                    android:paddingBottom="@dimen/_5sdp"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:text="@string/text_summary"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/text_details_small" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/shadow5"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_shadow_top_height"
+                        android:background="@drawable/top_shadow_gradient" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/drawable_shadow_normal"
+                        android:orientation="horizontal">
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_totalHours"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/_15sdp"
+                                android:text="8 hrs"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_20sdp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:gravity="center|top"
+                                android:paddingBottom="@dimen/_15sdp"
+                                android:text="@string/text_total_hours"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/text_details_small" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="3dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:src="@drawable/ic_seperator" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tv_totalAmount"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:paddingTop="@dimen/_15sdp"
+                                android:text="£176.00"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/_20sdp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:gravity="center"
+                                android:paddingBottom="@dimen/_15sdp"
+                                android:text="Total Amount"
+                                android:textColor="@color/grey"
+                                android:textSize="@dimen/text_details_small" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/shadow6"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_shadow_bottom_height"
+                        android:layout_below="@+id/tab_layout"
+                        android:background="@drawable/bottom_shadow_gradient" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/extra"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.mylocumchoice.MyLocumChoicePharmacy.utils.LockableScrollView>
+
+        <LinearLayout
+            android:id="@+id/ll_frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView
+                    style="@style/ms9_DefaultShadowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_62sdp"
+                    app:ms9_affectsDisplayedPosition="true"
+                    app:ms9_ambientShadowDrawablesList="@array/ms9_ambient_shadow_drawables_z18"
+                    app:ms9_forceUseCompatShadow="true"
+                    app:ms9_shadowElevation="@dimen/_10sdp"
+                    app:ms9_shadowTranslationZ="@dimen/_5sdp"
+                    app:ms9_spotShadowDrawablesList="@array/ms9_spot_shadow_drawables_z18"
+                    app:ms9_useAmbientShadow="false"
+                    app:ms9_useSpotShadow="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></LinearLayout>
+                </com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom">
+
+                    <TextView
+                        android:id="@+id/btn_accept"
+                        style="@style/TextViewRect"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Update" />
+
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

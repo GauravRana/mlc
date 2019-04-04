@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_47sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/layout_list">
+
+    <View
+        android:id="@+id/shadow_up"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_2sdp"
+        android:background="@drawable/drawable_shadow_up"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.9"
+        android:layout_height="match_parent"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:gravity="center_vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_img"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            app:civ_border_width="0.7dp"
+            app:civ_border_color="@color/border_color"
+            android:src="@drawable/pharmacy_placeholder"
+            android:layout_marginLeft="@dimen/_15sdp"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Boots"
+            android:maxLines="1"
+            android:textSize="@dimen/text_small_label"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:paddingRight="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:padding="@dimen/_2sdp"
+            android:src="@drawable/ic_plus"
+            android:layout_marginRight="@dimen/_15sdp"/>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+   <!-- <View
+        android:id="@+id/shadow4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_4sdp"
+        android:visibility="gone"
+        android:background="@drawable/bottom_shadow_gradient"/>-->
+
+</LinearLayout>

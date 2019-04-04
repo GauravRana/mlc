@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.shifts.activities.ShiftDetailActivity"
+    android:orientation="vertical"
+    style="@style/statusBarHeader">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/screen_background"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/content_header"/>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scroll_View"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/ll_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/drawable_shadow_down"
+                    android:paddingTop="@dimen/_10sdp"
+                    android:paddingBottom="@dimen/_10sdp">
+
+                    <LinearLayout
+                        android:id="@+id/ll_call"
+                        android:layout_width="0dp"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/iv_Call"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_call"/>
+
+
+                        <TextView
+                            android:text="Call"
+                            android:textColor="@color/text_g"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_call"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_Email"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/iv_Email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_email"/>
+
+
+                        <TextView
+                            android:text="Email"
+                            android:textColor="@color/text_g"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_call"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_EEmail"
+                        android:layout_width="0dp"
+                        android:paddingTop="@dimen/_2sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/iv_Emergency"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_emergency"/>
+
+                        <TextView
+                            android:text="Emergency"
+                            android:textColor="@color/text_g"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_call"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_below="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_13sdp">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <LinearLayout
+                    android:layout_below="@+id/recyclerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ll_bottom"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/text_small_label"
+                        android:layout_marginLeft="@dimen/_15sdp"
+                        android:layout_marginRight="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:background="@color/screen_background"
+                        android:text="@string/tv_contact"/>
+
+                </LinearLayout>
+
+                <com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    style="@style/ms9_DefaultShadowStyle"
+                    android:id="@+id/btn_Shadow"
+                    android:visibility="gone"
+                    android:layout_below="@+id/iv_logo"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    app:ms9_shadowTranslationZ="2dp"
+                    app:ms9_shadowElevation="10dp"
+                    app:ms9_useAmbientShadow="false"
+                    app:ms9_useSpotShadow="true"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    app:ms9_forceUseCompatShadow="true"
+                    app:ms9_affectsDisplayedPosition="true"
+                    app:ms9_spotShadowDrawablesList="@array/ms9_spot_shadow_drawables_z18"
+                    app:ms9_ambientShadowDrawablesList="@array/ms9_ambient_shadow_drawables_z18">
+
+                    <TextView
+                        android:id="@+id/tv_SignUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:background="@drawable/bgr"
+                        android:gravity="center"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:text="@string/text_cb"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_details"
+                        android:textAppearance="@style/TextAppearance.FontPathBoldSemiBold"/>
+                </com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView>
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_62sdp"
+        android:visibility="visible"
+        android:id="@+id/ll_frameLayout"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView
+                style="@style/ms9_DefaultShadowStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_62sdp"
+                app:ms9_shadowTranslationZ="@dimen/_5sdp"
+                app:ms9_shadowElevation="@dimen/_10sdp"
+                app:ms9_useAmbientShadow="false"
+                app:ms9_useSpotShadow="true"
+                app:ms9_forceUseCompatShadow="true"
+                app:ms9_affectsDisplayedPosition="true"
+                app:ms9_spotShadowDrawablesList="@array/ms9_spot_shadow_drawables_z18"
+                app:ms9_ambientShadowDrawablesList="@array/ms9_ambient_shadow_drawables_z18">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </LinearLayout>
+            </com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom">
+
+                <TextView
+                    style="@style/TextViewRect"
+                    android:id="@+id/btn_accept"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:text="Apply" />
+
+                <LinearLayout
+                    android:id="@+id/ll_half"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TextViewRectHalf"
+                        android:id="@+id/btn_half_acc"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.45"
+                        android:layout_height="match_parent"
+                        android:text="Accept" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:background="@drawable/ic_sep_dark"/>
+
+                    <TextView
+                        style="@style/TextViewRectHalf"
+                        android:id="@+id/btn_half_offer"
+                        android:text="Make an Offer"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.45"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </FrameLayout>
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

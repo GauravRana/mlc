@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.shifts.fragment.OpenShiftFragment">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/screen_background"
+        tools:context=".bookings.MapActivity">
+
+        <FrameLayout
+            android:id="@+id/ll_edtText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/drawable_shadow">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/ll_noData"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v4.widget.SwipeRefreshLayout
+                        android:id="@+id/swipeNodata"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_40sdp"
+                        >
+
+                        <TextView
+                            android:id="@+id/tv_noData"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:padding="@dimen/_13sdp"
+                            android:lineSpacingExtra="@dimen/_2sdp"
+                            android:text="@string/noOpenShifts"
+                            android:textSize="@dimen/_13sdp"
+                            android:textColor="@color/grey"
+                            android:visibility="gone" />
+                    </android.support.v4.widget.SwipeRefreshLayout>
+
+                </LinearLayout>
+                <android.support.design.widget.CoordinatorLayout
+                    android:id="@+id/cordinator"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/progressBar1"
+                    android:layout_marginTop="@dimen/_50sdp">
+
+                    <android.support.design.widget.AppBarLayout
+                        android:id="@+id/collapse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        app:elevation="0dp">
+
+                        <android.support.design.widget.CollapsingToolbarLayout
+                            android:id="@+id/colTap"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                            <LinearLayout
+                                android:id="@+id/ll_topBar"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                                <TextView
+                                    android:id="@+id/tv_total"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/editText"
+                                    android:background="@drawable/drawable_shadow_down"
+                                    android:elevation="@dimen/_15sdp"
+                                    android:gravity="center"
+                                    android:padding="@dimen/_10sdp"
+                                    android:stateListAnimator="@null"
+                                    android:text=""
+                                    android:textAppearance="@style/TextAppearance.FontPathRegular"
+                                    android:textSize="@dimen/text_small_label"
+                                    app:layout_collapseMode="parallax" />
+
+                            </LinearLayout>
+                        </android.support.design.widget.CollapsingToolbarLayout>
+                    </android.support.design.widget.AppBarLayout>
+
+
+                    <android.support.v4.widget.SwipeRefreshLayout
+                        android:id="@+id/swipeRefreshLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                        app:srl_direction="top">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recyclerView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+                    </android.support.v4.widget.SwipeRefreshLayout>
+
+                </android.support.design.widget.CoordinatorLayout>
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:visibility="gone"
+                    android:layout_gravity="center" />
+            </RelativeLayout>
+
+
+            <com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView
+                style="@style/ms9_DefaultShadowStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                app:ms9_affectsDisplayedPosition="true"
+                app:ms9_ambientShadowDrawablesList="@array/ms9_ambient_shadow_drawables_z18"
+                app:ms9_forceUseCompatShadow="true"
+                app:ms9_shadowElevation="2dp"
+                app:ms9_shadowTranslationZ="1dp"
+                app:ms9_spotShadowDrawablesList="@array/ms9_spot_shadow_drawables_z18"
+                app:ms9_useAmbientShadow="false"
+                app:ms9_useSpotShadow="true">
+
+                <LinearLayout
+                    android:id="@+id/ll_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:orientation="vertical"
+                    android:background="@color/screen_background">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/et_search"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/_7sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:singleLine="true"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:background="@drawable/edit_grey_drawable"
+                            android:drawableLeft="@drawable/ic_pin"
+                            android:drawablePadding="@dimen/_10sdp"
+                            android:hint="Select a location"
+                            android:paddingLeft="@dimen/_10sdp"
+                            android:paddingTop="@dimen/_10sdp"
+                            android:paddingBottom="@dimen/_10sdp"
+                            android:paddingRight="@dimen/_25sdp"
+                            android:textAppearance="@style/TextAppearance.FontPathRegular"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_small_label"
+                            android:visibility="visible" />
+
+                        <ImageView
+                            android:id="@+id/iv_clear"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:padding="@dimen/_10sdp"
+                            android:src="@drawable/ic_places_cross"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </com.h6ah4i.android.materialshadowninepatch.MaterialShadowContainerView>
+
+        </FrameLayout>
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

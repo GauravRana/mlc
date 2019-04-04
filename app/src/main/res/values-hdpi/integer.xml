@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="cross">2</integer>
+    <integer name="tagMargins">20</integer>
+</resources>

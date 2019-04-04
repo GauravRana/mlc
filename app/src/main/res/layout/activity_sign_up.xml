@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.signup.activities.SignUpActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/layout"
+    android:background="@drawable/backg">
+
+<!--    android:fitsSystemWindows="true" -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_320sdp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            style="@style/TextViewRound"
+            android:id="@+id/tv_SignUp"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/iv_logo"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:text="@string/text_signup" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tv_SignIN"
+        android:layout_below="@+id/btn_Shadow"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:gravity="center"
+        android:textSize="@dimen/text_small_label"
+        android:textColor="@color/textColor"
+        android:text="@string/text_already"
+        android:textAppearance="@style/TextAppearance.FontPathRegular"/>
+    </LinearLayout>
+
+</LinearLayout>

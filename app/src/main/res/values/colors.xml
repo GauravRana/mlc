@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#27A7A6</color>
+    <color name="colorPrimaryDark">#27A7A6</color>
+    <color name="colorAccent">#1CCfCC</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="grey">#b2b2b2</color>
+    <color name="light_grey">#f0f0f0</color>
+    <color name="grey_transparent">#80000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey_background">#FAFAFA</color>
+    <color name="grey_stroke">#D2D2D2</color>
+    <color name="red">#B96865</color>
+    <color name="warning">#D25D5C</color>
+    <color name="screen_background">#FAFAFA</color>
+    <color name="blue">#0069FF</color>
+    <color name="orange">#EB8B2D</color>
+    <color name="green">#27A19E</color>
+    <color name="border_color">#E9E9E9</color>
+    <color name="redWarn">#E46D6D</color>
+    <color name="greenWarn">#28A09C</color>
+
+    <color name="switchColorOff">#AFD6D5</color>
+    <color name="switchColorOn">#015F5D</color>
+
+    <color name="textColor">#414852</color>
+    <color name="orangeText">#eb8b2d</color>
+
+
+    <color name="tag_color">#fafafa</color>
+
+    <color name="statusBar">#ccceeceb</color>
+
+    <color name="progress">#1Affffff</color>
+
+    <color name="link">#141414</color>
+    <color name="startColor">#10000000</color>
+
+    <color name="backColor">#b2b2b2</color>
+
+    <color name="darkOrange">#EB8B2D</color>
+
+    <color name="text_g">#28A3A1</color>
+    <color name="tab_indicator">#23B8B5</color>
+
+    <color name="status_uploaded">#141414</color>
+    <color name="status_verified">#27A19E</color>
+    <color name="status_pending">#141414</color>
+    <color name="status_pending_user">#EB8B2D</color>
+    <color name="status_expired">#CB544F</color>
+    <color name="grey_str">#F4F4F4</color>
+    <color name="notify_back">#E9F6F6</color>
+    <color name="skip">#20C4C1</color>
+
+
+
+    </resources>

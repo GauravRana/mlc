@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    style="@style/statusBarHeader"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/screen_background">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/content_header" />
+
+
+        <!--<me.didik.component.StickyNestedScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_below="@+id/toolbar">-->
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/llSticky"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/toolbar"
+                    android:background="@color/screen_background"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/_20sdp"
+                    android:tag="sticky"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:background="@drawable/drawable_shadow_normal"
+                        android:gravity="center"
+                        android:tag="sticky"
+                        android:text="Mandatory"
+                        android:textColor="@color/warning"
+                        android:textSize="@dimen/text_details_big" />
+
+                    <View
+                        android:id="@+id/shadow21"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_shadow_bottom_height"
+                        android:layout_below="@+id/tab_layout"
+                        android:background="@drawable/bottom_shadow_gradient" />
+                </LinearLayout>
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_sections"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/toolbar">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+        <!--</me.didik.component.StickyNestedScrollView>-->
+
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

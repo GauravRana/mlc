@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.calender.fragment.CalFragment"
+    android:orientation="vertical"
+    android:background="@color/screen_background">
+
+    <com.mylocumchoice.MyLocumChoicePharmacy.utils.StickyNestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/screen_background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="vertical"
+                android:visibility="visible"
+                android:background="@color/light_grey"
+                android:tag="sticky">
+
+                <TextView
+                    android:id="@+id/tv_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="center_vertical"
+                    android:textColor="@color/grey_background"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:textSize="@dimen/text_details"/>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_15sdp">
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+    </com.mylocumchoice.MyLocumChoicePharmacy.utils.StickyNestedScrollView>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="@dimen/_13sdp"
+        android:lineSpacingExtra="@dimen/_2sdp"
+        android:text="@string/noNewNotifications"
+        android:textSize="@dimen/_13sdp"
+        android:textColor="@color/grey"/>
+
+</RelativeLayout>

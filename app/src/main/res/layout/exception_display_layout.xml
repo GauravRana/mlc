@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/statusBarHeader">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/content_header"/>
+
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/screen_background">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_55sdp"
+        android:id="@+id/exception_text"
+        android:gravity="center"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:text="Some exception happened"
+        android:textSize="@dimen/text_details"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:text="Sign In Again"
+        android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>
